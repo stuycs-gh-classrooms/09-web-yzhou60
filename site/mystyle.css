@@ -1,0 +1,63 @@
+html {
+background-color: #1c2a3d;
+}
+
+body {
+font-family: "Garamond";
+color: #FFAE42;
+}
+
+a {
+font-family: "Garamond";
+color: gray;
+}
+
+li {
+font-family: "Garamond";
+color: white;
+font-size: 20px;}
+
+h1 {
+font-family: "Cursive";
+color: white;
+font-weight: bold;
+font-size: 50px;
+text-align: center;
+}
+
+h2 {
+font-family: "Cursive";
+color: white;
+font-weight: bold;
+font-size: 35px;
+text-align: left;
+}
+
+p {
+font-size: 20px;
+}
+
+
+nav {
+border-top: 1px dotted white;
+border-bottom: 1px dotted white;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: #000;
+  content: '>';
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
