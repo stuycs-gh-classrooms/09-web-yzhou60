@@ -2,18 +2,19 @@ html {
 background-color: #1c2a3d;
 }
 
+
 .topic {
 background-color: blue;
 color: white;
 border: 2px solid gray;
-width = 
 margin: 20px;
-paddong: 20px;
+padding: 20px;
 }
 
 body {
 font-family: "Garamond";
 color: #FFAE42;
+width: 200px;
 }
 
 a {
