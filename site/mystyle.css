@@ -2,16 +2,17 @@ html {
 background-color: #1c2a3d;
 }
 
-img
- {
-
+img {
 width: 600px;
 height: 400px;
 float: right;
 margin-right: 6%;
+padding-left: 5vw;
+padding-right: 5vw;
+padding-top: 10vh;
 }
 
-.topic {
+topic {
 background-color: blue;
 color: white;
 border: 2px solid gray;
@@ -55,7 +56,6 @@ font-size: 20px;
 text-align: justify;
 width: 52%;
 }
-
 
 nav {
 border-top: 1px dotted white;
