@@ -12,11 +12,11 @@
 Fractals Reimagined!
 </h1>
 
-<p>This is the basic koch curve below:</p>
-<pre><code>modified_koch(t, 4, 3)</code></pre>
+<p>This is the basic koch curve below: <code>modified_koch(t, 4, 3)</code></p>
+
 <img src="koch_orignal.png">
 
-<p>This reimagining of the koch curve. In this case, at each depth, the length of the koch "line" is multipled by a random factor of 1 or 2. Furthermore, the pen color of the turtle becomes blue once depth increases beyond `. This creates a slightly more unique pattern while still retaining the overall shape.</p>
+<p>This reimagining of the koch curve. In this case, at each depth, the length of the koch "line" is multipled by a random factor of 1 or 2. Furthermore, the pen color of the turtle becomes blue once depth increases beyond 1. This creates a slightly more unique pattern while still retaining the overall shape.</p>
 <pre><code>
 def modified_koch(t, depth, length):
     t.pd()
@@ -37,8 +37,8 @@ def modified_koch(t, depth, length):
 
 <p>--------------------------------------------------------------------------------------------------------</p>
 
-<p>This is the initial sierpenski triangle:</p>
-<pre><code>sierpinski(t, 5, 200)</pre></code>
+<p>This is the initial sierpenski triangle: <code>sierpinski(t, 5, 200)</code></p>
+
 <img src="sierpenski_original.png">
 
 <p>This is a reimagining of the sierpenski triangle, with the following modifications:
@@ -73,8 +73,7 @@ def mod_sier(t, depth, size, scale_factor=1):
 
 <p>--------------------------------------------------------------------------------------------------------</p>
 
-<p>This is a bland tree:</p>
-<pre><code>tree(t, 6, 100, 10)</pre></code>
+<p>This is a bland tree: <code>tree(t, 6, 100, 10)</code></p>
 <img src="tree.png">
 
 <p>Following a reimagining, the following changes have been made:
@@ -102,7 +101,7 @@ def slanted_tree(t, depth, length, angle, width):
         slanted_tree(t, depth-1, l, a, width * 0.85)
         t.rt(angle)
         t.bk(length)
-</pre></code>
+</code></pre>
 <img src="new_tree.png">
 
 </body>
