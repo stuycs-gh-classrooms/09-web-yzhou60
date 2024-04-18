@@ -3,21 +3,12 @@ background-color: #1c2a3d;
 }
 
 img {
-width: 220px;
-height: 200px;
-float: right;
-margin-right: 6%;
-padding-left: 5vw;
+width: 300px;
+height: 250px;
+margin-left: 1px;
+padding-left: 0vw;
 padding-right: 5vw;
-padding-top: 10vh;
-}
-
-topic {
-background-color: blue;
-color: white;
-border: 2px solid gray;
-margin: 20px;
-padding: 20px;
+padding-top: 0vh;
 }
 
 body {
@@ -25,10 +16,6 @@ font-family: "Garamond";
 color: #FFAE42;
 }
 
-a {
-font-family: "Garamond";
-color: gray;
-}
 
 li {
 font-family: "Garamond";
@@ -40,11 +27,12 @@ font-family: "Cursive";
 color: white;
 font-weight: bold;
 font-size: 50px;
-text-align: center;
+text-align: left;
+margin-left: 1px;
 }
 
 h2 {
-font-family: "Cursive";
+font-family: "Garamond";
 color: white;
 font-weight: bold;
 font-size: 35px;
@@ -55,9 +43,4 @@ p {
 font-size: 20px;
 text-align: justify;
 width: 52%;
-}
-
-nav {
-border-top: 1px dotted white;
-border-bottom: 1px dotted white;
 }

@@ -5,19 +5,27 @@
 <head>
 <meta charset="utf-8">
 <title>Fractals Imagined!</title>
-<link href="mystyle.css" rel="stylesheet">
+<link href="fractals.css" rel="stylesheet">
 
 <body>
 <h1>
 Fractals Reimagined!
 </h1>
 
+
+<h2>The Koch Curve</h2>
 <p>This is the basic koch curve below: <code>modified_koch(t, 4, 3)</code></p>
 
 <img src="koch_original.png">
 
 
-<p>This reimagining of the koch curve. In this case, at each depth, the length of the koch "line" is multipled by a random factor of 1 or 2. Furthermore, the pen color of the turtle becomes blue once depth increases beyond 1. This creates a slightly more unique pattern while still retaining the overall shape.</p>
+<p>This reimagining of the koch curve that creates a more unique pattern whilest still retaining the overall shape. The following modifications have been made:
+<ol>
+<li>At each depth, the length of the koch "line" is multipled by a random factor of 1 or 2.</li>
+<li>The pen color of the turtle becomes blue once depth increases beyond 1.</li>
+</ol>
+</p>
+
 <pre><code>
 def modified_koch(t, depth, length):
     t.pd()
@@ -37,18 +45,18 @@ def modified_koch(t, depth, length):
 <img src="koch_modified.png">
 
 <p>--------------------------------------------------------------------------------------------------------</p>
-
+<h2>The Sierpenski Triangle</h2>
 <p>This is the initial sierpenski triangle: <code>sierpinski(t, 5, 200)</code></p>
 
 <img src="sierpenski_original.png">
 
-<p>This is a reimagining of the sierpenski triangle, with the following modifications:
+<p>This is a reimagining of the sierpenski triangle, that creates an interestingly non-symmetric design that resembles a video game level. The following modifications have been made:
 <ol>
 <li>The color of the turtle's pen has been changed to brown once the depth increased beyond 1.</li>
 <li>As the turtle put the pen up each time when it is drawing the third case of the sierpenski triangle.</li>
 <li>The turtle puts the pen back down each time the third case is done.</li>
 </ol>
-This creates an interestingly non-symmetric design that resembles a video game level.
+
 </p>
 <pre><code>
 def mod_sier(t, depth, size, scale_factor=1):
@@ -73,17 +81,16 @@ def mod_sier(t, depth, size, scale_factor=1):
 <img src="sier_modified.png">
 
 <p>--------------------------------------------------------------------------------------------------------</p>
-
+<h2>The Tree</h2>
 <p>This is a bland tree: <code>tree(t, 6, 100, 10)</code></p>
 <img src="tree.png">
 
-<p>Following a reimagining, the following changes have been made:
+<p>Following a reimagining, a more realistic resemblance of a tree is made. The changes made are:
 <ol>
 <li>The color of the tree is now brown.</li>
 <li>The width steadily decreases by a factor of 0.9 everytime you move up a depth.</li>
 <li>A random number between 0 and 5 is added to the length of each line/branch, allowing for more diversified branch lengths.</li>
 </ol>
-Overall, this creates a more realistic resemblance of a tree.
 </p>
 <pre><code>
 def slanted_tree(t, depth, length, angle, width):
